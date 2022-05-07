@@ -1,0 +1,3 @@
+﻿admin username: a  password: a
+
+customer login: abc123 password abc123*

@@ -1,0 +1,73 @@
+<div class="sticky-nav-wrapper">
+<nav class="custom-nav-class" ngStickyNav>
+
+<table>
+  <tr>
+    <td>
+      <a href="/">
+        <picture>
+      <source srcset="assets/images/logo.jpg"  media="(min-width: 450px)" href="/">
+      <img src="assets/images/spark.jpg"  width="100" height="40" href="/">
+    </picture>
+    </a>
+</td>
+  <td>
+
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <div class="container">
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-0">
+
+    <div class="form-group">
+        <div id="imaginary_container">
+    <div class="input-group stylish-input-group" >
+<input type="text" name="searchStr" [(ngModel)]="searchStr"
+ class="form-control">
+ <span class="input-group-addon">
+<button type="submit" routerLink="">
+<span class="glyphicon glyphicon-search">
+
+        </span>
+        </button>
+        </span>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+</div>
+</form>
+</td>
+</tr>
+</table>
+</nav>
+</div>
+
+
+<div *ngIf="searchRes">
+  <div class="app flex-row align-items-center">
+      <div class="container pull-left">
+          <div class="card-deck row">
+              <div class="card col-md-4" *ngFor="let stuff of searchRes" >
+ <div class="card-block">
+   <hr>
+   <a (click)="clear()" routerLink="results/{{stuff.itemId}}">
+   <img id="clickme" src="{{stuff.mediumImage}}"/></a>
+  <p><a (click)="clear()" style="color:black" routerLink="results/{{stuff.itemId}}">{{stuff.name}}</a></p>
+
+
+  <p><b> {{stuff.salePrice| currency:"$"}} </b></p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<router-outlet></router-outlet>

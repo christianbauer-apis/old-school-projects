@@ -1,0 +1,51 @@
+
+
+
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+:root {
+  /* setting var for nav height */
+  --sticky-nav-height: 40px;
+
+}
+
+.sticky-nav-wrapper {
+  /* set min height on wrapper so that the page
+     doesn't awkwardly snap and lose height */
+  min-height: var(--sticky-nav-height);
+
+}
+
+.sticky-nav {
+  height: var(--sticky-nav-height);
+}
+
+.custom-nav-class{
+  background-color: white;
+  position:absolute;
+  z-index: 1;
+}
+
+p{
+  font-size: 16px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+hr{
+  width : 400px;
+}

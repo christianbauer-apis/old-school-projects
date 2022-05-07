@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 236px;
+        }
+        .auto-style3 {
+            width: 1230px;
+        }
+        .auto-style4 {
+            width: 1210px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">
+                    <asp:ImageButton ID="homeImageButton" src="images/homeimage.jpg" NavigateUrl="~/Home.aspx" runat="server" OnClick="homeImageButton_Click" />
+                </td>
+                <td  style="font-size:40px;  background-color:yellow;"  class="auto-style4" >
+&nbsp;&nbsp;&nbsp;
+                   Bauer Electronics</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="auto-style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style3">&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

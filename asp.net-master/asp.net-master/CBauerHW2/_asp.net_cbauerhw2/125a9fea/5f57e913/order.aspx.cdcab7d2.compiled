@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/E:/asp.net/CBauerHW2/Order.aspx" hash="fffffff7ac01e01a" filehash="1913d863fdf4a8" flags="110000" assembly="App_Web_1xmomqvy" type="ASP.order_aspx">
+    <filedeps>
+        <filedep name="/E:/asp.net/CBauerHW2/Order.aspx" />
+        <filedep name="/E:/asp.net/CBauerHW2/Order.aspx.cs" />
+    </filedeps>
+</preserve>

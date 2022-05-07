@@ -1,0 +1,41 @@
+/*
+ This application asks the user to input an encrypted number to then be decrypted.
+ */
+
+import java.util.Scanner;
+public class Decryption {
+	public static void main (String args[])
+	{
+		Scanner input = new Scanner(System.in);
+		int ddigit1, ddigit2, ddigit3, ddigit4;
+		int eedigit1, eedigit2, eedigit3, eedigit4;	
+		int edigit;
+		System.out.print("\nenter four digit encrypted code: ");
+		edigit = input.nextInt();
+		
+		eedigit1=(edigit/1000)-7;
+		eedigit2=(edigit % 1000 / 100)-7;
+		eedigit3=(edigit % 1000 % 100 / 10)-7;
+		eedigit4=(edigit % 1000 % 100 % 10) -7;
+		
+		ddigit1 = eedigit3;
+		ddigit2 = eedigit4;
+		ddigit3 = eedigit1;
+		ddigit4 = eedigit2;
+		
+		if( ddigit1<0)
+		ddigit1 = eedigit3+10;
+
+		if( ddigit2<0)
+		ddigit2 = eedigit4+10;
+
+		if( ddigit3<0)
+		ddigit3 = eedigit1+10;
+			
+		if( ddigit4<0)
+		ddigit4 = eedigit2+10;
+
+		System.out.printf("decrypted code is %d%d%d%d", ddigit1, ddigit2, ddigit3, ddigit4);
+	
+	}
+}

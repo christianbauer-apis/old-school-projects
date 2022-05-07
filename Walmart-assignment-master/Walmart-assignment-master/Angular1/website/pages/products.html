@@ -1,0 +1,32 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <a href="#/"><img src="images/wmt_h_r_c.jpg" width="200" height="60" href="#/"></a>
+<div ng-repeat="s in result.items">
+<div class="row">
+
+    <div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            
+       <a href = "#/recommend">
+           <h3 class="panel-title" ng-click="add(s.itemId);">{{s.name}}  </h3>
+           
+        
+                </a>
+         
+        </div>
+        <div class="panel-body">
+            <a href = "#/recommend">
+             
+                <img id="clickme" src ={{s.thumbnailImage}}  ng-click="add(s.itemId);"/>
+                
+            </a>
+            <p class="panel-body">
+                {{s.salePrice | currency:"$"}} </p>
+                 <p class="panel-body">
+                {{s.shortDescription | escape}}</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+

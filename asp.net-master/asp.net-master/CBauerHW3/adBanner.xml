@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>images/Hotel1.jpg</ImageUrl>
+    <NavigateUrl>http://www.marriott.com/default.mi</NavigateUrl>
+    <AlternateText>Shamrock Paperweight</AlternateText>
+    <Impressions>10</Impressions>
+    <Keyword>Crystal</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>images/Hotel2.jpg</ImageUrl>
+    <NavigateUrl>http://www.holidayinn.com</NavigateUrl>
+    <AlternateText>dont care</AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>Crystal</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>images/Hotel3.jpg</ImageUrl>
+    <NavigateUrl>http://www.ramada.com</NavigateUrl>
+    <AlternateText>Large Shamrock Tea Pot</AlternateText>
+    <Impressions>10</Impressions>
+    <Keyword>Pottery</Keyword>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,43 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <a href="#/"><img src="images/wmt_h_r_c.jpg" width="200" height="60" href="#/"></a>
+<div ng-repeat="d in yyy.items">
+<div class="row">
+
+    <style>
+        .image
+        {
+            padding: 0 10px
+        }
+    </style>
+    <div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+             <h3 class="panel-title"> {{d.name}}</h3>
+            
+        </div>
+        <div class="panel-body">
+            
+             
+                <img src ={{d.mediumImage}} class="img-responsive"/>
+                 <p class="panel-body"> {{d.salePrice | currency:"$"}}</p>
+            <p class="panel-body">{{d.shortDescription | escape}}</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+<div ng-repeat="s in zzz">
+    <div class="row">
+
+    <div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"> {{s.name}}</h3>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>

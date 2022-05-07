@@ -1,0 +1,20 @@
+<div *ngIf="searchRes">
+<div *ngFor="let stuff of searchRes">
+  <div class="container pull-left">
+  <div class="row">
+    <div class="col-sm-8">
+<img id="clickme" src="{{stuff.largeImage}}"/>
+</div>
+<div class="col-sm-4">
+  <h3>{{stuff.name}}</h3>
+    <b>{{stuff.salePrice| currency:"$"}}</b>
+<p [innerHTML]="stuff.longDescription | unescape"> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div *ngFor="let Rec of searchRec">
+<p>{{Rec.name}}</p>
+</div>

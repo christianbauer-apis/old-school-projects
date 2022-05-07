@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- HW5_Afternoon.html --> 
+<!-- XHTML form for gathering user input. -->
+<html>
+   <head>
+      <title>Ticket Order Form</title>
+   </head>
+   <body>
+      <h1 align="center">Tickets Order Form</h1>
+      <p>Please fill in all fields and click Purchase button.</p>
+   
+      <!-- post form data to HW5.php -->
+      <form method = "post" action = "HW5.php">
+        
+	 <div>
+        
+            <!-- create text boxes for user input -->
+	<table cellspacing="5">
+	<tr>
+  		<td> Name:</td>   
+   		<td> <input type = "text" name = "c_name" </td>
+	</tr>
+	<tr>
+   		<td> Phone:</td>   
+   		<td> <input type = "text" name = "c_phone" </td>
+	</tr>
+
+	<tr>
+   		<td> Email:</td>   
+   		<td> <input type = "text" name = "c_email" </td>
+	</tr>
+
+	<tr>
+   		<td> Number of tickets: </td>
+   		<td><input type = "text" name = "no_tickets" </td>
+	</tr> 
+
+	<tr>
+   		<td> Select section: </td>
+   		<td>
+
+		<!-- drop-down list containing sections -->
+	           
+		<select name = "sections">
+               		<option>Orchestra</option>
+               		<option>Mezzanine</option>
+              		<option>General</option>
+              		<option>Balcony</option>
+		</select>
+		</td>
+	</tr> 
+      
+	</table>
+
+	<br/>
+   	
+	<!-- create Purchase button -->
+      	<br> 
+	<input type = "submit" value = "Purchase Tickets" /><br/>
+         </div>
+      </form>
+   </body>
+</html>
+
